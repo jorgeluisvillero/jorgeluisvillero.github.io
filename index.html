@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="img/logo/logo.ico">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div 
+                class="search-bar__logo-container"
+                style="background-image: url(img/logo/logo.png);"
+                >
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda">Buscar</label>
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <a 
+                class="search-bar__carrito-container" 
+                href="https://www.mercadopago.com.ar/como-cobrar/codigo-qr?code=V1C70X&utm_experiment=optimize&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_P_X_SEARCH_SELL_CPA_MP_EXACT_XPBR&matt_tool=28766038&matt_word=&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLUtZK46W7FheYu03y9NZCMOpt0fb-mG4Or_MMss-L7zP_a2Gb_Ql5QaAhMQEALw_wcB"
+                style="background-image: url(img/logo/buycar.png);"
+                >  
+            </a>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-cards">
+
+            <header class="section-cards__header">
+                <h1>Esto te puede interesar</h1>
+                <p>Productos destacados</p>
+            </header>
+
+            <div class="cards-container">
+                
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/notebook-lenovo.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Notebook Lenovo</h3>
+                            <div class="card__description">
+                                <p>Descripcion: i5, 16gb ram, SSD 2tb, grafica nvidia 1030, MBoard Gigabyte.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>90.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/apple-iphone-11-pro-max.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">IPhone 11 Pro 256 GB</h3>
+                            <div class="card__description">
+                                <p>259gb, anti-wash30 min, Chip A13, Display OLED6,Graba y Edita videos 4k.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>269.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/camara-canon.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Canon Profesional</h3>
+                            <div class="card__description">
+                                <p>Resolución de 20.1 Mpx f/3.0-5.9, Pantalla de 3 ", 55 MB de memoria interna.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>29.999</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/auriculares-sony.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Auricular Sony</h3>
+                            <div class="card__description">
+                                <p> 
+                                    batería 30 hr,Modo manos libres incluido, Con cancelación de ruido.
+                                </p>
+                            </div>
+                            <div>
+                                <p><b>$</b>39.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/parlante-jbl.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante JBL Flip 5</h3>
+                            <div class="card__description">
+                                <p>Manos libres, A prueba de agua, bluethoot, Apto uso Exterior, potencia 20W,USb conect.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>18.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/google-nest-mini.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Google Nest Mini </h3>
+                            <div class="card__description">
+                                <p>Google Nest Mini 2nd Gen tu música sonará mejor y más fuerte que nunca.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>17.800</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/samsung-galaxy-s21-plus-5g.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Galaxy s21 plus 5g</h3>
+                            <div class="card__description">
+                                <p>Pantalla Dynamic AMOLED 2X de 6.7", Tiene 3 cámaras traseras de 64Mpx/12Mpx/12Mpx.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>154.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/drone-dji.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone DJI</h3>
+                            <div class="card__description">
+                                <p>Mini drone DJI mavic mini 2 fly combo con camara 4k, cantidad de motores 4.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>80.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/notebook-lenovo.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Notebook Lenovo</h3>
+                            <div class="card__description">
+                                <p>Descripcion: i5, 16gb ram, SSD 2tb, grafica nvidia 1030, MBoard Gigabyte.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>90.000</p>
+                            </div>    
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/dji-mavic-2-pro.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Dron DJI mavic 2 pro</h3>
+                            <div class="card__description">
+                                <p>Dron DJI mavic 2 pro con camara HD, color Gris,combo con camara adicional 4k. </p>
+                            </div>
+                            <div>
+                                <p><b>$</b>500.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/camara-canon.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Canon Profesional</h3>
+                            <div class="card__description">
+                                <p>Resolución de 20.1 Mpx f/3.0-5.9, Pantalla de 3 ", 55 MB de memoria interna.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>29.999</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/chromecast-google.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Google Chromecast 3</h3>
+                            <div class="card__description">
+                                <p>Elige entre más de 200.000 programas de TV y películas, y 30 millones de canciones</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>90.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/parlante-jbl.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante JBL Flip 5</h3>
+                            <div class="card__description">
+                                <p>Manos libres, A prueba de agua, bluethoot, Apto uso Exterior, potencia 20W,USb conect.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>18.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/google-nest-mini.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Google Nest Mini </h3>
+                            <div class="card__description">
+                                <p>Google Nest Mini 2nd Gen tu música sonará mejor y más fuerte que nunca.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>17.800</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/televisor-lg.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Smart TV LG LED 4K</h3>
+                            <div class="card__description">
+                                <p>Control de voz, HDR aumenta el contraste colores vivos y profundos, 70 pulgadas.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>239.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/drone-dji.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone DJI</h3>
+                            <div class="card__description">
+                                <p>Mini drone DJI mavic mini 2 fly combo con camara 4k, cantidad de motores 4.</p>
+                            </div>
+                            <div>
+                                <p><b>$</b>80.000</p>
+                            </div>   
+                            <div>
+                                <input type="submit" value="Comprar">
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+        <div class="contact_connecticus"> 
+            <div> 
+                <img src="img/logo/logo.png" alt="Logo">                
+            </div>
+            <div>
+            <h3>Venta telefónica:</h3>
+            0234 654 2345 <br>
+            LU-VI de 8:00 a 20:00 <br>
+            SA-DO-Feriados de 9:00 a 21:00
+            </div>
+            <div>
+            <h3>
+                Atención al cliente: 
+            </h3>
+            1223 999 2345 <br>
+            LU-VI de 09:00 a 18:00 <br>
+            SA de 9:00 a 13:00 
+            </div>
+            <div>
+            <h3>
+                Cobranza de créditos: 
+            </h3>
+            0345 567 8234 <br>
+            LU-VI de 08:00 a 19:45 
+            </div>
+            <div>
+            <h3>Servicios a empresas: </h3>
+            Ventas corporativas
+            </div>
+        </div>
+
+        <p class="copyright">
+        <b>
+            Copyright 2019 | Todos los derechos reservados contact_connecticus.com. Coneccticus S.A.C.I. e I. Finochietto 436 (1143) | Capital Federal | Argentina 
+        </b><br>
+
+        Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.contact_connecticus.com.ar y/o www.contact_connecticus.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas. Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.
+        </p>
+    </footer>
+</body>
+</html>
