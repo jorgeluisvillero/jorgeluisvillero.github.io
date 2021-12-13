@@ -199,21 +199,49 @@ body {
 
 .container-alta {
   padding: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#60efff));
+  background-image: linear-gradient(to top, #FFFFFF, #60efff);
   /* img {
         display: block;
         margin: 0 auto;
     } */
 }
 
+.container-alta form {
+  border-right: 1px solid black;
+  width: 450px;
+}
+
 .container-alta h1 {
-  color: blue;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 0 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f5ebc3), to(#26c5f3));
+  background-image: linear-gradient(to top, #f5ebc3, #26c5f3);
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(207, 214, 72, 0.7);
+          box-shadow: 2px 2px 2px 1px rgba(207, 214, 72, 0.7);
+  border-radius: 10px;
 }
 
 .container-alta div, .container-alta input {
-  width: 300px;
-  display: block;
-  margin-bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  width: 400px;
+  margin-bottom: 10px;
+  font-size: large;
 }
 
 .container-alta button {
