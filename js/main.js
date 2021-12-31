@@ -32,7 +32,7 @@ class Main {
     }
 
     async cargarPlantilla(id) {
-        let archivo = getNombreArchivo(id)
+        let archivo = this.getNombreArchivo(id)
 
         let plantilla = await this.ajax(archivo)
         // Carga del código de vista (HTML) de la plantilla
