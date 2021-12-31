@@ -1,20 +1,14 @@
-var elemSectionCarrito = document.getElementsByClassName('section-carrito')[0]
-
-function start() {
-
-    function ajax(url, metodo) {    // argumentos con valores por default
-        let xhr = new XMLHttpRequest
-        xhr.open(metodo || 'get', url)
-        xhr.send()
-
-        return xhr
+class Main {
+    async ajax(url, metodo='get') {    // argumentos con valores por default
+        return await fetch(url, { method: metodo }).then(r => r.text())
     }
 
-    function getNombreArchivo(id) {
+
+    getNombreArchivo(id) {
         return 'vistas/' + id + '.html'
     }
 
-    function marcarLink(id) {
+    marcarLink(id) {
         let links = document.querySelectorAll('header nav a')
         links.forEach( link => {
             if(link.id == id) link.classList.add('active')
@@ -22,7 +16,7 @@ function start() {
         })
     }
 
-    function initJS(id) {
+    initJS(id) {
         if(id == 'alta') {
             initAlta()
         }
@@ -37,31 +31,25 @@ function start() {
         }
     }
 
-    function cargarPlantilla(id) {
+    async cargarPlantilla(id) {
         let archivo = getNombreArchivo(id)
 
-        let xhr = ajax(archivo)
-        xhr.addEventListener('load', () => {
-            if (xhr.status == 200) {
-                let plantilla = xhr.response
+        let plantilla = await this.ajax(archivo)
+        // Carga del código de vista (HTML) de la plantilla
+        let main = document.querySelector('main')
+        main.innerHTML = plantilla
 
-                // Carga del código de vista (HTML) de la plantilla
-                let main = document.querySelector('main')
-                main.innerHTML = plantilla
-
-                // Carga del código script (JS) de la plantilla
-                initJS(id)
-            }
-        })
+        // Carga del código script (JS) de la plantilla
+        this.initJS(id)
     }
 
-    function cargarPlantillas() {
+    async cargarPlantillas() {
         /* --------------------------------------------------------- */
         /* Carga inicial de la vista determinada por la url visitada */
         /* --------------------------------------------------------- */
         let id = location.hash.slice(1) || 'inicio'
-        marcarLink(id)
-        cargarPlantilla(id)
+        this.marcarLink(id)
+        await this.cargarPlantilla(id)
 
         /* ------------------------------------------------------------- */
         /* Carga de cada uno de los contenidos según la navegación local */
@@ -79,16 +67,18 @@ function start() {
             })
         })
 
-        window.addEventListener('hashchange', () => {
+        window.addEventListener('hashchange', async () => {
             //console.log('Cambió la URL')
 
             let id = location.hash.slice(1) || 'inicio'
-            marcarLink(id)
-            cargarPlantilla(id)
+            this.marcarLink(id)
+            await this.cargarPlantilla(id)
         })
     }
-
-    cargarPlantillas()
+    async start() {
+        await this.cargarPlantillas()
+    }
 }
 
-start()
+const main = new Main()
+main.start()
