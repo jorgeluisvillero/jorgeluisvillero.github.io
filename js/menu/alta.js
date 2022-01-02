@@ -24,7 +24,7 @@ class FormularioAlta {
         this.inputs.forEach((input,index) => {
             if(input.type != 'checkbox') {
                 input.addEventListener('input', () => {
-                    validar(input.value, regExpValidar[index], index )
+                    this.validar(input.value, this.regExpValidar[index], index )
                     if(renderTablaAlta) renderTablaAlta( !this.algunCampoNoValido(), productoController.productos )
                 })
             }
@@ -70,7 +70,7 @@ class FormularioAlta {
         }
 
         this.camposValidos[index] = true
-        this.button.disabled = algunCampoNoValido()
+        this.button.disabled = this.algunCampoNoValido()
 
         this.setCustomValidityJS('',index)
         return valor
@@ -113,7 +113,7 @@ function renderTablaAlta(validos, productos) {
 
                 var template = Handlebars.compile(plantillaHbs);
                 // execute the compiled template and print the output to the console
-                let html = template({ productos: productos })
+                let html = template({ productos, validos })
             
                 document.getElementById('listado-productos').innerHTML = html            
             }
