@@ -17,9 +17,9 @@ class FormularioAlta {
         this.inputs = document.querySelectorAll('main form input')
         this.form = document.querySelector('main form')
         this.button = document.querySelector('main form button') 
-
+    
         this.button.disabled = true
-        
+    
         //console.log(inputs)
         this.inputs.forEach((input,index) => {
             if(input.type != 'checkbox') {
@@ -29,17 +29,17 @@ class FormularioAlta {
                 })
             }
         })
-
+    
         this.form.addEventListener('submit', e => {
             e.preventDefault()
-
+    
             let producto = this.leerProductoIngresado()
             this.limpiarFormulario()
 
             if(guardarProducto) guardarProducto(producto)
         })
     }
-  
+    
     setCustomValidityJS = function(mensaje, index) {
         let divs = document.querySelectorAll('form div')
         divs[index].innerHTML = mensaje
@@ -95,30 +95,26 @@ class FormularioAlta {
             if(input.type != 'checkbox') input.value = ''
             else if(input.type == 'checkbox') input.checked = false
         })
-
+    
         this.button.disabled = true
         this.camposValidos = [false,false,false,false,false,false,false]
-
     }
 }
 
 function renderTablaAlta(validos, productos) {
 
     const xhr = new XMLHttpRequest
-    xhr.open('get','plantillas/listado.hbs')
+    xhr.open('get','plantillas/alta.hbs')
     xhr.addEventListener('load', () => {
-            if(xhr.status == 200) {
-                let plantillaHbs = xhr.response
-                //console.log(plantillaHbs)
+        if(xhr.status == 200) {
+            let plantillaHbs = xhr.response
 
-                var template = Handlebars.compile(plantillaHbs);
-                // execute the compiled template and print the output to the console
-                let html = template({ productos, validos })
-            
-                document.getElementById('listado-productos').innerHTML = html            
-            }
-        })
-        xhr.send()
+            var template = Handlebars.compile(plantillaHbs);
+            let html = template({ productos, validos })
+            document.getElementById('listado-productos').innerHTML = html            
+        }
+    })
+    xhr.send()
 }
 
 /* ------------------------------------------------------------ */
@@ -134,5 +130,4 @@ async function initAlta() {
     let productos = await productoController.obtenerProductos()
     renderTablaAlta(null, productos)
 }
-    
 

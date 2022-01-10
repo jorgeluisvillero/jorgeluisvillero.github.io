@@ -4,7 +4,8 @@
     overflow-y: auto;
     display: none;
     position: fixed;
-    background-color: #f1f2f3;
+    background-color: #e9db61;
+    border-radius: 100px;
     z-index: 1;
     top: 150px;
     left: 150px;
@@ -12,18 +13,22 @@
     bottom: 150px;
     box-shadow: .3em .3em 10em .3em rgba(0, 0, 0, 1);
     &--visible {
-        display: block;
+    display: block;
+    text-align: center;
     }
 
     table {
         width: 95%;
         margin: 10px auto;
+        border-radius: 10px;
     }
 
     table,th,td {
-        border: 1px solid black;
+        border-bottom: 5px solid black;
         border-collapse: collapse;
-        padding: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
     }
 
     table button {
@@ -34,15 +39,21 @@
         font-size: 1.1em;
         font-weight: bold;
         margin-bottom: 15px;
+        border-radius: 20px;
+        background-color: #023536;
+        color: white;
     }
-
+    
     button.btn__enviarCarrito {
         float: right;
-        margin: 15px;
+        margin: 35px;
         width: 100px;
         height: 35px;
         font-size: 1.1em;
         font-weight: bold;
+        border-radius: 20px;
+        background-color: #023536;
+        color: white;
     }
 
 }

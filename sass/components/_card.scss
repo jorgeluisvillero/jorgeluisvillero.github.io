@@ -1,24 +1,24 @@
 .card {
     outline: none;
     flex-grow: 1;
-    width: 220px;
+    width: 150px;
     max-width: 300px;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
     display: block;
     position: relative;
     isolation: isolate;
-    color: black;
+    color: #fcfdfe;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
-    
+
     &:hover,
     &:focus {
-        -moz-transform: scale(1.03);
+        //-moz-transform: scale(1.03);
         -webkit-transform: scale(1.03);
         transform: scale(1.03);
         -moz-transform-origin: bottom;
@@ -29,21 +29,23 @@
 
     &__image {
         background-size: cover;
-        height: 200px;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 170px, 0 200px);
-        clip-path: polygon(0 0, 100% 0, 100% 170px, 0 200px);
+        //background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px;
+        //-webkit-clip-path: polygon(0 0, 100% 0, 100% 170px, 0 200px);
+        clip-path: polygon(0 0, 100% 0, 100% 400px, 0 400px);
         background-position: center;
         transition: all .2s;
     }
     &__image_company {
         background-size: cover;
-        height: 450px;
+        height: 50px;
         background-position: center;
         transition: all .2s;
     }
     &:hover &__image {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
+        //-webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 200px);
+        //clip-path: polygon(0 0, 100% 0, 100% 200px, 0 300px);
         transform: scale(1.1) rotate(-2deg);
         transition-delay: 0s;
     }
@@ -51,63 +53,70 @@
     &__content {
         position: absolute;
         bottom: 0;
-        padding: 3em 1em 1em;
+        padding: 6em 1em 1em;
         height: 230px;
         width: 100%;
         z-index: -1;
         transition: all .2s;
     }
-
-    &:hover &__content {
-        padding-top: 4em;
+    &__content button {
+        padding: 5px;
+        margin-left:35%;
+        border-radius: 15px;
+        background-color: #e9db61;
+        
     }
+
+    //&:hover &__content {
+    //    padding-top: 4em;
+    //}
     & input {
-        padding: 10px;
-        width: 100%;
+       // padding: 10px;
+      //  width: 100%;
         border-radius: 50px;
         background-color: rgb(237, 161, 81);
-        font-weight: 900;
+        font-weight: 800;
         font-size: 20px;
 
     }
     &:nth-child(10n + 1) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);
+        background-image: linear-gradient(to top, #023536, #666d6e);
     }
 
     &:nth-child(10n + 2) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 3) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 4) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);
+        background-image: linear-gradient(to top, #023536, #666d6e);
     }
 
     &:nth-child(10n + 5) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 6) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 7) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 8) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 9) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #023536, #666d6e);    
     }
 
     &:nth-child(10n + 10) &__content {
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);    
+        background-image: linear-gradient(to top, #ffffff, #666d6e);    
     }
 
     @media (min-width: 1024px) {

@@ -1,35 +1,42 @@
 .container-alta {
-    padding: 10px;
-    background-image: linear-gradient(to top,#FFFFFF, #60efff);
+    padding:4em;
     
     form {
-        
-        border-right: 1px solid black;
-        width: 450px;
+        padding:0 5em;
+        margin: 30;
     }
     
-    h1 {
+    h1,
+    h2 {
         width: 100%;
+        color: white;
         text-align: center;
         font-size: 30px;
         font-weight: bolder;
-        padding:0 1em;
-        margin-bottom: 1em;
+        padding: 50px;
+        margin-bottom: 1em;   
         text-align: center;
-        background-image: linear-gradient(to top, #f5ebc3, #26c5f3);
-        box-shadow: 2px 2px 2px 1px rgba(207, 214, 72, 0.7);
+        background-color: #023536;
+        border: solid 2px black;
         border-radius: 10px;
     }
+  
+    input {
+        background-color: #fbfbfb; 
+        font-size: 20px;
+        width: 408px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #023536; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+        display: block; 
+        float: center; 
+        align-items: center;
 
-    div, input {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        flex-wrap: wrap;
-        text-align: left;
-        width: 400px;
-        margin-bottom: 10px;
-        font-size: large;
     }
 
     button {
@@ -37,7 +44,7 @@
         margin-top: 20px;
         width: 80px;
         height: 35px;
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: bold;
         margin-bottom: 15px;
     }
@@ -50,7 +57,7 @@
     }
 
     form div {
-        border: 1px solid red;
+        border: 1px solid rgb(18, 19, 9);
         background-color: yellow;
         color: darkred;
         margin: 2px 0 10px 0;
@@ -59,16 +66,18 @@
     }
 
     table,th,td {
-        border: 1px solid black;
-        border-collapse: collapse;
+        border: 3px solid black;
     }
-
+    
     table {
-        width: 90%;
+        border-radius: 5px;
+        width: 100%;
+        padding: 2em;
     }
 
     #listado-productos {
         width: 100%;
+
     }
 
     th,td {

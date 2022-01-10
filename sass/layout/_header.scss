@@ -3,16 +3,18 @@
 *********************************/
 .main-header {
     display: flex;
-    flex-direction: column-reverse ;
+    flex-direction: column;
+
 }
 
 .section-cards__header {
     padding: 1em;
     margin-bottom: 1em;
     text-align: center;
-    background-image: linear-gradient(to top, #f5ebc3, #26c5f3);
+    background-color: #023536;
+    color: white;
     width: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(207, 214, 72, 0.7);
+    box-shadow: 2px 2px 2px 1px rgba(28, 29, 18, 0.7);
     border-radius: 10px;
 
 }
@@ -26,7 +28,7 @@
 }
 
 #menu:checked ~ .search-bar .menu-toggle__label {
-    background-color: #60efff;
+    background-color: #6e6a6a;
 }
 #menu:checked ~ .search-bar__carrito-container {
     display: block;
@@ -35,13 +37,13 @@
             NAV BAR
 *********************************/
 .nav-bar {
-    background-color: #60efff;
+    background-color: #6e6a6a;
 }
 
 .nav-bar__nav-list {
     display: flex;
     list-style-type: none;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .nav-bar__nav-item {
@@ -50,12 +52,13 @@
 }
 
 .nav-bar__nav-link {
-    display: block;
-    color: black;
-    padding: .5em  1em;
+    display: flex;
+    background-color: #023536;
+    color: #fff;
+    padding: 1em 2em;
     text-decoration: none;
-    
-    border-radius: 6px;
+    border-radius: 25px;
+
 }
 
 
@@ -63,31 +66,36 @@
             SEARCH BAR
 *********************************/
 .search-bar {
-    background-color: #60efff;
+    background-color: #6e6a6a;
     display: flex;
     justify-content: space-between;
 }
 
 .search-bar__logo-container,
 .search-bar__form-container {
-    padding: 1em;
+    padding: .5em;
 }
 
 .search-bar__logo-container {
-    width: 450px;
-    background-image: url(../../img/logo/logo.png);
+    width:310px;
+
     background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #60efff;
-    text-decoration: none;
+    //background-repeat: no-repeat;
+    //background-color: #6e6a6a;
+    //text-decoration: none;
+    //padding: 1em;
+    //display: flex;
+
 }
 
 .search-bar__form-container {
-    background-color: #60efff;
-    flex-basis: 100%;
+    background-color: #6e6a6a;
+    width: 80%;
+    //flex-basis: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    border-radius: 10px;
     
 }
 
@@ -95,28 +103,32 @@
     display: none;
     background-color: black;
     color: #60efff;
-    border:solid 2px #60efff;
+    border:solid 2px #6e6a6a;
     border-radius: 3px;
 }
 
 .search-bar__form-search {
-    border-radius: 5px;
     background-color: #fff;
-    width: 60%;
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .search-bar__form-submit {
     background-color: black;
-    color: #60efff;
+    color: #f4ff60;
     border:solid 2px black;
-    border-radius: 3px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .search-bar__carrito-container {
-    flex: 0 0 3em;
-    background-image: url(../../img/logo/buycar.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    flex: 0 0 80px;
+ //   background-image: url(../../img/logo/buycar.png);
+   // background-size: contain;
+    //background-repeat: no-repeat;
+    
+     
 }
 
 
@@ -133,7 +145,7 @@
 
 .menu-toggle__label {
     display: block;
-    background-color: black;
+    background-color: #023536;
     width: 100%;
     height: 100%;
 }
@@ -178,5 +190,10 @@
     .nav-bar__nav-list {
         flex-direction: column;
     }
-
+    .search-bar__form-search {
+        display: none;
+    }
+    .search-bar__form-submit {
+        display: none;
+    }
 }
