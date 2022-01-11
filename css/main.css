@@ -101,9 +101,10 @@ body {
 }
 
 .card__content button {
-  padding: 5px;
-  margin-left: 35%;
-  border-radius: 15px;
+  padding: 4% 30%;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 25px;
   background-color: #e9db61;
 }
 
@@ -262,7 +263,7 @@ body {
 }
 
 .container-alta {
-  padding: 4em;
+  padding: 1em 4em;
   /* img {
         display: block;
         margin: 0 auto;
@@ -577,7 +578,7 @@ body {
 .section-cards {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#8d9394));
   background-image: linear-gradient(to top, #ffffff, #8d9394);
-  padding: 5px 6em;
+  padding: 1em 6em;
   min-height: 80vh;
 }
 
@@ -667,7 +668,7 @@ body {
 }
 
 .main_our_company {
-  padding: 0 6em;
+  padding: 0.1em 6em;
   min-height: 100vh;
 }
 
