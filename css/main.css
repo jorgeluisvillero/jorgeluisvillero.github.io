@@ -103,9 +103,11 @@ body {
 .card__content button {
   padding: 4% 30%;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 6%;
   border-radius: 25px;
   background-color: #e9db61;
+  font-size: large;
+  font-weight: bolder;
 }
 
 .card input {
@@ -417,9 +419,7 @@ body {
 }
 
 .nav-bar__nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background-color: #023536;
   color: #fff;
   padding: 1em 2em;
@@ -518,7 +518,7 @@ body {
 .menu-toggle__medallon,
 .menu-toggle__pan-abajo {
   display: block;
-  background-color: #333;
+  background-color: #e9d461;
   height: .2em;
   position: absolute;
   left: .5em;

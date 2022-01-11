@@ -3,7 +3,6 @@ class Main {
         return await fetch(url, { method: metodo }).then(r => r.text())
     }
 
-
     getNombreArchivo(id) {
         return 'vistas/' + id + '.html'
     }
@@ -54,7 +53,7 @@ class Main {
         /* ------------------------------------------------------------- */
         /* Carga de cada uno de los contenidos según la navegación local */
         /* ------------------------------------------------------------- */
-        let links = document.querySelectorAll('header nav a')
+        let links = document.querySelectorAll('.nav-bar__nav-link')
         //console.log(links)
 
         links.forEach(link => {
@@ -75,6 +74,7 @@ class Main {
             await this.cargarPlantilla(id)
         })
     }
+
     async start() {
         await this.cargarPlantillas()
     }

@@ -15,6 +15,7 @@
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
+    
 
     &:hover,
     &:focus {
@@ -62,9 +63,11 @@
     &__content button {
         padding:4% 30%;
         margin-top: 5%;
-        margin-left:10%;
+        margin-left:6%;
         border-radius: 25px;
         background-color: #e9db61;
+        font-size: large;
+        font-weight: bolder;
         
     }
 
