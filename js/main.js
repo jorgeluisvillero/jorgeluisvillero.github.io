@@ -53,7 +53,7 @@ class Main {
         /* ------------------------------------------------------------- */
         /* Carga de cada uno de los contenidos según la navegación local */
         /* ------------------------------------------------------------- */
-        let links = document.querySelectorAll('.nav-bar__nav-link')
+        let links = document.querySelectorAll('header nav a')
         //console.log(links)
 
         links.forEach(link => {
