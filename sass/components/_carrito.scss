@@ -3,9 +3,9 @@
     user-select: none;
     overflow-y: auto;
     display: none;
-    position: fixed;
+    position: inherit;
     background-color: #e9db61;
-    border-radius: 100px;
+    border-radius: 10px;
     z-index: 1;
     top: 150px;
     left: 150px;

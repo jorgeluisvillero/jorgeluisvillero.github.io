@@ -71,13 +71,16 @@
     justify-content: space-between;
 }
 
-.search-bar__logo-container,
+
 .search-bar__form-container {
     padding: .5em;
 }
 
 .search-bar__logo-container {
     width:310px;
+    .search-bar__logo-container img{
+    height: 1000px;    
+    }
 
     background-size: contain;
     //background-repeat: no-repeat;
@@ -124,13 +127,14 @@
 
 .search-bar__carrito-container {
     flex: 0 0 80px;
- //   background-image: url(../../img/logo/buycar.png);
-   // background-size: contain;
-    //background-repeat: no-repeat;
-    
-     
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+         
 }
-
+.search-bar__carrito-container img {
+    height: 60px;
+}
 
 /*********************************
             MENU TOGGLE
