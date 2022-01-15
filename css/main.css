@@ -100,10 +100,9 @@ body {
   transition: all .2s;
 }
 
-.card__content button {
-  padding: 4% 30%;
-  margin-top: 5%;
-  margin-left: 6%;
+.card button {
+  width: 100%;
+  margin-top: 10%;
   border-radius: 25px;
   background-color: #e9db61;
   font-size: large;
