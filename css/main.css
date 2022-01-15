@@ -444,6 +444,10 @@ body {
           justify-content: space-between;
 }
 
+.search-bar__form-container {
+  padding: .5em;
+}
+
 .search-bar__logo-container {
   width: 310px;
 }
