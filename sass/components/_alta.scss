@@ -1,11 +1,7 @@
 .container-alta {
     padding:1em 4em;
-    
-    form {
-        padding:0 5em;
-        margin: 30;
-    }
-    
+    min-width: 360px;
+
     h1,
     h2 {
         width: 100%;
@@ -19,12 +15,13 @@
         background-color: #023536;
         border: solid 2px black;
         border-radius: 10px;
+        min-width: 200px;
     }
   
     input {
         background-color: #fbfbfb; 
         font-size: 20px;
-        width: 408px; 
+        width: 100%; 
         height: 40px; 
         border-radius: 5px;  
         border-style: solid; 
@@ -36,6 +33,7 @@
         display: block; 
         float: center; 
         align-items: center;
+        min-width: 200px;
 
     }
 
@@ -90,3 +88,11 @@
     } */
 
 }
+@media (max-width: 780px) {
+    table {
+        display: none;
+    }
+    
+}
+
+
