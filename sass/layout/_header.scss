@@ -73,23 +73,24 @@
 
 
 .search-bar__form-container {
-    padding: .5em;
+//    padding: .5em;
 }
 
 .search-bar__logo-container {
     width:310px;
+    }
     .search-bar__logo-container img{
-    height: 1000px;    
+    height: 50px;    
     }
 
-    background-size: contain;
+   // background-size: contain;
     //background-repeat: no-repeat;
     //background-color: #6e6a6a;
     //text-decoration: none;
     //padding: 1em;
     //display: flex;
 
-}
+
 
 .search-bar__form-container {
     background-color: #6e6a6a;

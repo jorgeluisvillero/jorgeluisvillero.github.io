@@ -444,17 +444,12 @@ body {
           justify-content: space-between;
 }
 
-.search-bar__form-container {
-  padding: .5em;
-}
-
 .search-bar__logo-container {
   width: 310px;
-  background-size: contain;
 }
 
-.search-bar__logo-container .search-bar__logo-container img {
-  height: 1000px;
+.search-bar__logo-container img {
+  height: 50px;
 }
 
 .search-bar__form-container {
