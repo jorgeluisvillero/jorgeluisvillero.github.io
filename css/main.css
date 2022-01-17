@@ -67,8 +67,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 320px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 400px, 0 400px);
-          clip-path: polygon(0 0, 100% 0, 100% 400px, 0 400px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 170px, 0 200px);
+  clip-path: polygon(0 0, 100% 0, 100% 400px, 0 400px);
   background-position: center;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -83,16 +83,14 @@ body {
 }
 
 .card:hover .card__image {
-  -webkit-transform: scale(1.1) rotate(-2deg);
-          transform: scale(1.1) rotate(-2deg);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  -webkit-transform: scale(1.5) rotate(0);
+          transform: scale(1.5) rotate(0);
 }
 
 .card__content {
   position: absolute;
   bottom: 0;
-  padding: 6em 1em 2em;
+  padding: 7em 1em 2em;
   height: 230px;
   width: 100%;
   z-index: -1;
@@ -102,7 +100,7 @@ body {
 
 .card button {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 17%;
   border-radius: 25px;
   background-color: #e9db61;
   font-size: large;
@@ -162,8 +160,8 @@ body {
 }
 
 .card:nth-child(10n + 10) .card__content {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#666d6e));
-  background-image: linear-gradient(to top, #ffffff, #666d6e);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#023536), to(#666d6e));
+  background-image: linear-gradient(to top, #023536, #666d6e);
 }
 
 @media (min-width: 1024px) {
@@ -178,7 +176,7 @@ body {
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .card {
     min-width: 100%;
     height: 200px;
@@ -289,16 +287,14 @@ body {
 }
 
 .container-alta input {
-  background-color: #fbfbfb;
+  background-color: transparent;
   font-size: 20px;
   width: 100%;
   height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #023536;
+  color: #023536;
+  border: none;
   margin-top: 10px;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-bottom: 20px;
   display: block;
   float: center;
@@ -306,6 +302,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-width: 200px;
+  border-bottom: 3px dotted #023536;
 }
 
 .container-alta button {
@@ -316,6 +313,7 @@ body {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #023536;
 }
 
 .container-alta input[type="checkbox"] {
@@ -336,13 +334,14 @@ body {
 }
 
 .container-alta table, .container-alta th, .container-alta td {
-  border: 3px solid black;
+  border: 3px solid #023536;
 }
 
 .container-alta table {
   border-radius: 5px;
   width: 100%;
   padding: 2em;
+  color: #023536;
 }
 
 .container-alta #listado-productos {
